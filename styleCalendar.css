@@ -1,0 +1,49 @@
+body {
+  font-family: Consolas;
+  font-weight: bolder;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #e0e0e0;
+}
+
+#main {
+  margin-top: 100px;
+
+  background-color: #495e62;
+
+  padding: 10px;
+
+  height: fit-content;
+
+  border-radius: 10px;
+  border: solid black;
+}
+
+#CalendarDisplay {
+  font-size: 30px;
+  margin-top: 5px;
+  background-color: #dae2e8;
+
+  padding: 10px;
+
+  border: solid black;
+  border-radius: 10px;
+
+  width: 430px;
+}
+
+#heading {
+  font-size: 30px;
+  background-color: #dae2e8;
+
+  margin-left: 130px;
+
+  padding: 10px;
+
+  border: solid black;
+  border-radius: 10px;
+
+  width: 135px;
+}

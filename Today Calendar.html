@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styleCalendar.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="heading">Calendar</div>
+      <div id="CalendarDisplay" onload="showDate()"></div>
+    </div>
+
+    <script>
+      function showDate() {
+        var calendar = new Date();
+        var day = calendar.getDay();
+        var date = calendar.getDate();
+        var month = calendar.getMonth();
+        var year = calendar.getFullYear();
+
+        if (day == 0) {
+          day = "Sunday";
+        } else if (day == 1) {
+          day = "Monday";
+        } else if (day == 2) {
+          day = "Tuesday";
+        } else if (day == 3) {
+          day = "Wednesday";
+        } else if (day == 4) {
+          day = "Thursday";
+        } else if (day == 5) {
+          day = "Friday";
+        } else if (day == 6) {
+          day = "Saturday";
+        }
+
+        month = month < 10 ? "0" + month : month;
+        date = date < 10 ? "0" + date : date;
+
+        var displayDate = date + " - " + month + " - " + year + " : " + day;
+
+        document.getElementById("CalendarDisplay").innerText = displayDate;
+      }
+
+      showDate();
+    </script>
+  </body>
+</html>
